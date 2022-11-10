@@ -29,8 +29,8 @@ open class BarChartView: BarLineChartViewBase, BarChartDataProvider
         
         self.highlighter = BarHighlighter(chart: self)
         
-        self.xAxis.spaceMin = 1.5
-        self.xAxis.spaceMax = 1.5
+        self.xAxis.spaceMin = 0.5
+        self.xAxis.spaceMax = 0.5
     }
     
     internal override func calcMinMax()
@@ -165,7 +165,7 @@ open class BarChartView: BarLineChartViewBase, BarChartDataProvider
     
     /// Adds half of the bar width to each side of the x-axis range in order to allow the bars of the barchart to be fully displayed.
     /// **default**: false
-    @objc open var fitBars = true
+    @objc open var fitBars = false
     
     /// Set this to `true` to make the highlight operation full-bar oriented, `false` to make it highlight single values (relevant only for stacked).
     /// If enabled, highlighting operations will highlight the whole bar, even if only a single stack entry was tapped.

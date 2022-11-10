@@ -26,10 +26,10 @@ open class ViewPortHandler: NSObject
     @objc open private(set) var chartHeight: CGFloat = 0
 
     /// minimum scale value on the y-axis
-    @objc open private(set) var minScaleY: CGFloat = 1.0
+    @objc open private(set) var minScaleY: CGFloat = 0.6
 
     /// maximum scale value on the y-axis
-    @objc open private(set) var maxScaleY = CGFloat.greatestFiniteMagnitude
+    @objc open private(set) var maxScaleY = 0.7
 
     /// minimum scale value on the x-axis
     @objc open private(set) var minScaleX: CGFloat = 1.0
@@ -41,7 +41,7 @@ open class ViewPortHandler: NSObject
     @objc open private(set) var scaleX: CGFloat = 1.0
 
     /// contains the current scale factor of the y-axis
-    @objc open private(set) var scaleY: CGFloat = 1.0
+    @objc open private(set) var scaleY: CGFloat = 0.6
 
     /// current translation (drag / pan) distance on the x-axis
     @objc open private(set) var transX: CGFloat = 0
