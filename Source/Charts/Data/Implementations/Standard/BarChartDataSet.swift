@@ -9,8 +9,9 @@
 //  https://github.com/danielgindi/Charts
 //
 
-import CoreGraphics
 import Foundation
+import CoreGraphics
+
 
 open class BarChartDataSet: BarLineScatterCandleBubbleChartDataSet, BarChartDataSetProtocol
 {
@@ -116,9 +117,6 @@ open class BarChartDataSet: BarLineScatterCandleBubbleChartDataSet, BarChartData
     open var highlightAlpha = CGFloat(120.0 / 255.0)
     
     // MARK: - NSCopying
-    
-    /// The multiplier to generate a corner radius for the bar. 0.0 means no round radius.
-    open var roundRadiusWidthMultiplier: CGFloat = 0.0
     
     open override func copy(with zone: NSZone? = nil) -> Any
     {

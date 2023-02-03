@@ -1738,7 +1738,7 @@ open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartD
     /// The current y-scale factor
     @objc open var scaleY: CGFloat
     {
-        return viewPortHandler.scaleY
+        return (viewPortHandler.scaleY)
     }
 
     /// if the chart is fully zoomed out, return true
